@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.banxxi.ktclearableinputs.SampleActivity">
+
+    <com.banxxi.clearableinputs.ClearableEditText
+        android:id="@+id/clearableEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:clearIcon="@drawable/ic_bin"
+        app:iconTint="#ff0000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.banxxi.clearableinputs.ClearableAutoCompleteTextView
+        android:id="@+id/clearableAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconTint="#00ff00"
+        app:clearIcon="@drawable/ic_rubber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clearableEditText" />
+
+    <com.banxxi.clearableinputs.ClearableTextInputEditText
+        android:id="@+id/clearableTextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconTint="#0000ff"
+        app:clearIcon="@drawable/ic_cancel_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clearableAutoCompleteTextView" />
+
+    <com.banxxi.clearableinputs.ClearableEditText
+        android:id="@+id/defaultClearableInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clearableTextInputEditText" />
+
+</android.support.constraint.ConstraintLayout>
